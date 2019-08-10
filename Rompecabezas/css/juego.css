@@ -1,0 +1,162 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+body {
+  font-family: Arial, sans-serif;
+  width: 940px;
+  margin: 5% auto;
+  min-height: 100%;
+  background-image: url(../images/adventure.jpg);
+}
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+li {
+  padding: 5px 0;
+  animation: fadein 5s;
+}
+li::before {
+  content: "• ";
+  color: #EC6778;
+}
+
+.col-40 h1 {
+  font-size: 20px;
+  color: #E84A5F;
+}
+
+.col-40, .col-60 {
+  display: table-cell;
+  margin: 0;
+  vertical-align: top;
+}
+.col-40 {
+  background: #FFF;
+  padding: 23px 40px;
+  color: #000;
+}
+
+.col-60 {
+  background: #E84A5F;
+  width: 600px;
+  
+}
+
+#flecha{
+  font-size: 60px;
+}
+
+.texto-centrado {
+  text-align: center;
+}
+
+#titulo .titulo__texto {
+  font-size: 16px;
+}
+
+.titulos {
+  font-size: 14px;
+}
+
+#lista-instrucciones li {
+  font-size: 14px;
+}
+
+/* #juego {
+  display: flex;
+  width: 600px;
+  height: 600px;
+  flex-wrap: wrap;
+} */
+
+#juego div {
+  float: left;
+  text-align: center;
+  animation: fadein 2s;
+  height: 200px;
+  width: 200px;
+  /* box-sizing: border-box; */
+  /* border: 1px solid #7CA3F4; */
+}
+
+.estilosPiezas img{
+  width: 200px;
+  height: 200px;
+}
+
+.imagenFinal {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  bottom: 5px;
+}
+
+.modalExitoGanador{
+  display: none; 
+  position: fixed; 
+  z-index: 10000; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.contenidoDelModalExito{
+  background-color: #fefefe;
+  margin: 15% auto; 
+  padding: 20px;
+  border: 1px solid #888;
+  width: 35%;
+  height: 155px;
+}
+
+.botonCerrar{
+  color: #c8dad3;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.botonCerrar:hover,
+.botonCerrar:focus{
+  color: #525252;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.botonJugarDeNuevo {
+  background-color: #1ee3cf;
+  height: 40px;
+  border-radius: 15px;
+  width: 250px;
+  position: relative;
+  left: 105px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  border: none;
+}
+
+.botonJugarDeNuevo:hover,
+.botonJugarDeNuevo:focus{
+  color: #525252;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 10px;
+  box-shadow:5px 5px 10px #b0b6b4;
+}
+
+.textoGanaste {
+  text-align: center;
+  font-size: 28px;
+  margin: 35px;
+  color: #525252;
+}
+
+
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BMO Arcade</title>
+    <link rel="stylesheet" href="css/juego.css">
+  </head>
+  <body>
+    <div class="col-40">
+    
+      <div id="titulo">
+        <h2 class="titulo__texto">
+          Rompecabezas BMO
+        </h2>
+      </div>
+      <div id="instrucciones">
+        <h3 class="titulos">
+          Instrucciones:
+        </h3>
+        <ul id="lista-instrucciones">
+        </ul>
+      </div>
+      <div id="objetivo">
+        <h3 class="titulos">
+          Solución:
+        </h3>
+        <div class="texto-centrado">
+          <img class="imagenFinal" src="images/final.png" alt="Así debería quedar">
+        </div>
+      </div>
+      <div id="ultimo-mov">
+        <div id="flecha" class="texto-centrado">
+          
+        </div>
+      </div>
+      
+    </div>
+    <div class="col-60">
+      <div id="juego">
+        <div class="estilosPiezas" id="pieza1">
+          <img src="images/10.jpg" alt="Imagen 1">
+        </div>
+        <div class="estilosPiezas" id="pieza2">
+          <img src="images/20.jpg" alt="Imagen 2">
+        </div>
+        <div class="estilosPiezas" id="pieza3">
+          <img src="images/30.jpg" alt="Imagen 3">
+        </div>
+        <div class="estilosPiezas" id="pieza4">
+          <img src="images/40.jpg" alt="Imagen 4">
+        </div>
+        <div class="estilosPiezas" id="pieza5">
+          <img src="images/50.jpg" alt="Imagen 5">
+        </div>
+        <div class="estilosPiezas" id="pieza6">
+          <img src="images/60.jpg" alt="Imagen 6">
+        </div>
+        <div class="estilosPiezas" id="pieza7">
+          <img src="images/70.jpg" alt="Imagen 7">
+        </div>
+        <div class="estilosPiezas" id="pieza8">
+          <img src="images/80.jpg" alt="Imagen 8">
+        </div>
+        <div class="estilosPiezas" id="pieza9">
+          
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      
+    </div>
+    <div id="modalExito" class="modalExitoGanador">
+      <div class="contenidoDelModalExito">
+        <div id="botonX" class="botonCerrar">&times;</div>
+        <p class="textoGanaste">¡GANASTE! ¡Felicidades!</p>
+        <button id="botonModal" class="botonJugarDeNuevo">VOLVER A JUGAR</button>
+      </div>
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
